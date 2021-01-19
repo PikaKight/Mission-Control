@@ -1,33 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8"
+        <meta charset="UTF-8">
         <title>WEMARS Mission Control</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <button onclick="videoOn()">VideoON</button>
         <div id="container">
-            <video autoplay="true" id="vid">
-
-            </video>
+            <video autoplay="true" id="vid"></video>
         </div>
         <script>
             var video = document.querySelector('#vid');
-
-            if (navigator.mediaDevices.getUserMedia) {
-                navigator.mediaDevices.getUserMedia({video: true})
-                .then(function(stream) {
-                    video.srcObject = stream;
-                })
-                .catch(function(err0r) {
-                    console.log("Something went wrong!");
-                });
+            function videoOn(){
+                
+                if (navigator.mediaDevices.getUserMedia) {
+                    navigator.mediaDevices.getUserMedia({video: true})
+                    .then(function(stream) {
+                        video.srcObject = stream;
+                    })
+                    .catch(function(err0r) {
+                        console.log("Something went wrong!");
+                    });
+                }
             }
 
-            function stop(e) {
-                var stream = video.srcObject;
-                var
-            }
         </script>
     </body>
 </html>
