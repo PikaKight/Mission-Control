@@ -9,7 +9,7 @@ This is a web app that will act as the controller for the Western Engineering Mo
 - [ ] Build the HTML View
 - [ ] Replace the Unity controls with proper commands for the rover
 
-##What is needed
+## What is needed
 - [ ] Camera View
 - [ ] Map View
 - [ ] Control the rover forward, backward
