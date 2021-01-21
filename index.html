@@ -10,21 +10,6 @@
         <div id="container">
             <video autoplay="true" id="vid"></video>
         </div>
-        <script>
-            var video = document.querySelector('#vid');
-            function videoOn(){
-                
-                if (navigator.mediaDevices.getUserMedia) {
-                    navigator.mediaDevices.getUserMedia({video: true})
-                    .then(function(stream) {
-                        video.srcObject = stream;
-                    })
-                    .catch(function(err0r) {
-                        console.log("Something went wrong!");
-                    });
-                }
-            }
-
-        </script>
+        <script type="text/javascript" src="Webcam.js"></script>
     </body>
 </html>
