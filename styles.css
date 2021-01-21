@@ -1,12 +1,19 @@
 #container {
-    margin: 0px auto;
+    left: 30px;
     width: 500px;
     height: 375px;
     border: 10px #333 solid;
 }
 
 #vid{
+    left: 30px;
     width: 500px;
     height: 375px;
     background-color: #B9D5F8;
+}
+
+#map{
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
 }
